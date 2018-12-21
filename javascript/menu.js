@@ -101,3 +101,32 @@ mobileIcon.addEventListener('click', function() { // Click Event
     });
 
 });
+
+window.addEventListener("scroll", function(){
+    var ypos = window.pageYOffset;
+    console.log(ypos);
+    if(ypos >= 80){
+        document.querySelector(".nav").style.backgroundColor = "white";
+        document.querySelector("a.logo").style.top = "15px";
+        document.querySelector(".nav").style.boxShadow = "0px 1px 18px #888888";
+        document.querySelector(".navigation").style.top = "-35px";
+        document.querySelector(".dropdown_menu").style.top = "15px";
+        document.querySelector(".bar1").style.backgroundColor = "#514336";
+        document.querySelector(".bar2").style.backgroundColor = "#514336";
+        document.querySelector(".bar3").style.backgroundColor = "#514336";
+        document.querySelector(".menu-links").style.color = "#514336";
+    }
+
+    else {
+        document.querySelector(".nav").style.backgroundColor = "transparent";
+        document.querySelector("a.logo").style.top = "42px";
+        document.querySelector(".navigation").style.top = "0px";
+        document.querySelector(".dropdown_menu").style.top = "40px";
+        document.querySelector(".nav").style.boxShadow = "0px 0px 0px #888888";
+        document.querySelector(".bar1").style.backgroundColor = "white";
+        document.querySelector(".bar2").style.backgroundColor = "white";
+        document.querySelector(".bar3").style.backgroundColor = "white";
+        document.querySelector(".menu-links").style.color = "white";
+    }
+
+});

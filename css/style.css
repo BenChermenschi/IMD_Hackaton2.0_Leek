@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix:after {
@@ -82,8 +87,73 @@ a.logo {
     transform: translateY(-5px);
 }
 
-/* MEDIA QUERIES */
+.pricing-table {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 
+.col {
+    flex: 100%;
+    padding: 10px;
+    max-width: 260px;
+    box-sizing: border-box;
+}
+
+.table {
+    background-color: white;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000070;
+}
+
+.table h2{
+    text-transform: uppercase;
+}
+
+.table ul{
+    margin: 0;
+    padding: 0;
+}
+
+.table ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+
+.price{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.price span{
+    display: block;
+    font-size: 14px;
+}
+
+.table a{
+    text-decoration: none;
+    color: #2AB34B;
+    border: 2px solid #2AB34B;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s linear;
+}
+
+.table a:hover{
+  background: #2AB34B;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
 /* Tablet Media Query */
 @media (min-width: 768px) {
     .dropdown_menu,
@@ -115,5 +185,13 @@ a.logo {
     a.logo {
         float: left;
         margin: .3em 1em;
-    }   
+    } 
+    
+    .col{
+        flex: 50%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .col: 20%;
 }

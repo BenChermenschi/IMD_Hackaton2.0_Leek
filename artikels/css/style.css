@@ -1,6 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
 }
 
 .clearfix:after {
@@ -40,11 +51,11 @@ body {
 a.logo {
     float: left;
     color: white;
-    background-image: url(../images/);
+    background-image: url(../image/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
     margin: .3em .5em;
     text-decoration: none;
     text-indent: -999999px;
@@ -63,6 +74,7 @@ a.logo {
 }
 
 .mobile_navigation a {
+    color: #2AB34B;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -81,13 +93,85 @@ a.logo {
 .mobile_navigation a:hover {
     transform: translateY(-5px);
 }
-/* TEKST */
-body {
-    width: 90%;
-    max-width: 1000px;
+
+.pricing-table {
+    max-width: 1300px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
+
+.col {
+    flex: 100%;
+    padding: 10px;
+    max-width: 260px;
+    box-sizing: border-box;
+}
+
+.table {
+    background-color: white;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000070;
+    min-height: 422px;
+}
+
+.table h2{
+    text-transform: uppercase;
+}
+
+.table ul{
+    margin: 0;
+    padding: 0;
+}
+
+.table ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+
+.price{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.price span{
+    display: block;
+    font-size: 14px;
+}
+
+.table a{
+    width: 200px;
+    text-decoration: none;
+    color: #2AB34B;
+    border: 2px solid #2AB34B;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s linear;
+    position: relative;
+    position: absolute;
+    bottom: 10px;
+}
+
+.table a:hover{
+  background: #2AB34B;
+  color: #fff;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+/* TEKST */
 h1 {
+    text-align: center;
     font-size: 2em;
     margin: 40px 0px 20px;
 }
@@ -106,8 +190,8 @@ li {
     margin-top: 20px;
     margin-left: 50px;
 }
-/* MEDIA QUERIES */
 
+/* MEDIA QUERIES */
 /* Tablet Media Query */
 @media (min-width: 768px) {
     .dropdown_menu,
@@ -119,10 +203,12 @@ li {
         display: inherit;
         float: right;
         margin: 1em;
+        margin-top: 50px;
+        margin-right: 110px;
     }
 
     .navigation a {
-        color: black;
+        color: #2AB34B;
         text-decoration: none;
         padding: .75em 1.25em;
         font-weight: normal;
@@ -133,11 +219,19 @@ li {
     }
 
     .navigation a:hover {
-        opacity: .6;
+        font-weight:400;
     }
 
     a.logo {
         float: left;
         margin: .3em 1em;
-    }   
+    } 
+    
+    .col{
+        flex: 50%;
+    }
+}
+
+@media (min-width: 980px) { 
+    .col: 20%;
 }

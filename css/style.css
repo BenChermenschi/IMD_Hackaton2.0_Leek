@@ -81,3 +81,39 @@ a.logo {
 .mobile_navigation a:hover {
     transform: translateY(-5px);
 }
+
+/* MEDIA QUERIES */
+
+/* Tablet Media Query */
+@media (min-width: 768px) {
+    .dropdown_menu,
+    .mobile_navigation {
+        display: none;
+    }
+
+    .navigation {
+        display: inherit;
+        float: right;
+        margin: 1em;
+    }
+
+    .navigation a {
+        color: black;
+        text-decoration: none;
+        padding: .75em 1.25em;
+        font-weight: normal;
+        box-sizing: border-box;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+
+    .navigation a:hover {
+        opacity: .6;
+    }
+
+    a.logo {
+        float: left;
+        margin: .3em 1em;
+    }   
+}

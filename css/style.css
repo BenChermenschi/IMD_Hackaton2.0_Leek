@@ -156,10 +156,11 @@ a.logo {
 
 #artikels .img1 {
     background-image: url(../image/phishing-nl.jpg);
-    background-size: 280px;
+    background-size: 400px;
     background-repeat: no-repeat;
-    height: 180px;
-    width: 180px;
+    background-position: center center;
+    height: 220px;
+    width: 220px;
     float: left;
 }
 

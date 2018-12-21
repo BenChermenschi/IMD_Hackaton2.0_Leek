@@ -8,10 +8,41 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+header {
+    height: 100vh;
+}
+
 section {
     display: block;
     margin: 0 auto;
     max-width: 1300px;
+    padding-top: 120px;
 }
 
 /* TEKST */
@@ -34,12 +65,6 @@ p {
 ul {
     list-style: disc;
     margin: 20px 0px;
-}
-
-.clearfix:after {
-    display: block;
-    content: " ";
-    clear: both;
 }
 
 .navigation {
@@ -70,6 +95,7 @@ ul {
     position: relative;
 }
 
+
 a.logo {
     float: left;
     color: white;
@@ -77,10 +103,22 @@ a.logo {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100px;
-    width: 100px;
+    width: 50px;
     margin: .3em .5em;
     text-decoration: none;
     text-indent: -999999px;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 .mobile_navigation {
@@ -234,5 +272,12 @@ footer p {
 }
 
 @media (min-width: 980px) { 
-    .col: 20%;
+    .col{
+        flex: 20%;
+    } 
+    
+    a.logo {
+        margin-left: 110px;
+        margin-top: 20px;
+    }
 }

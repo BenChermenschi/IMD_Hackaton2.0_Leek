@@ -247,6 +247,16 @@ a.logo {
   color: #fff;
 }
 
+.ondernemingen img {
+    height: 100px;
+    float: left;
+    margin-left: 100px;
+}
+
+.ondernemingen img:nth-child(1) {
+    margin-left: 0px;
+}
+
 footer p {
     font-size: 12px;
     text-align: center;

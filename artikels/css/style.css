@@ -1,21 +1,6 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-section {
-    display: block;
-    margin: 0 auto;
-    max-width: 1300px;
-}
-
-h1 {
-    text-align: center;
 }
 
 .clearfix:after {
@@ -55,11 +40,11 @@ h1 {
 a.logo {
     float: left;
     color: white;
-    background-image: url(../image/logo.png);
+    background-image: url(../images/);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 40px;
     margin: .3em .5em;
     text-decoration: none;
     text-indent: -999999px;
@@ -78,7 +63,6 @@ a.logo {
 }
 
 .mobile_navigation a {
-    color: #2AB34B;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -97,84 +81,33 @@ a.logo {
 .mobile_navigation a:hover {
     transform: translateY(-5px);
 }
-
-.pricing-table {
-    max-width: 1300px;
+/* TEKST */
+body {
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
 }
-
-.col {
-    flex: 100%;
-    padding: 10px;
-    max-width: 260px;
-    box-sizing: border-box;
+h1 {
+    font-size: 2em;
+    margin: 40px 0px 20px;
 }
-
-.table {
-    background-color: white;
-    padding: 40px 20px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 10px #00000070;
-    min-height: 422px;
+h2 {
+    font-size: 1.5em;
+    margin: 30px 0px 20px;
 }
-
-.table h2{
-    text-transform: uppercase;
+p {
+    line-height: 1.2em;
 }
-
-.table ul{
-    margin: 0;
-    padding: 0;
+ul {
+    list-style: disc;
+    margin: 20px 0px;
 }
-
-.table ul li{
-    padding: 10px 0;
-    list-style: none;
+li {
+    margin-top: 20px;
+    margin-left: 50px;
 }
-
-.price{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.price span{
-    display: block;
-    font-size: 14px;
-}
-
-.table a{
-    width: 200px;
-    text-decoration: none;
-    color: #2AB34B;
-    border: 2px solid #2AB34B;
-    display: block;
-    padding: 10px 0;
-    margin: 10px 0;
-    border-radius: 40px;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: 0.5s linear;
-    position: relative;
-    position: absolute;
-    bottom: 10px;
-}
-
-.table a:hover{
-  background: #2AB34B;
-  color: #fff;
-}
-
-footer p {
-    font-size: 12px;
-    text-align: center;
-}
-
 /* MEDIA QUERIES */
+
 /* Tablet Media Query */
 @media (min-width: 768px) {
     .dropdown_menu,
@@ -186,12 +119,10 @@ footer p {
         display: inherit;
         float: right;
         margin: 1em;
-        margin-top: 50px;
-        margin-right: 110px;
     }
 
     .navigation a {
-        color: #2AB34B;
+        color: black;
         text-decoration: none;
         padding: .75em 1.25em;
         font-weight: normal;
@@ -202,19 +133,11 @@ footer p {
     }
 
     .navigation a:hover {
-        font-weight:400;
+        opacity: .6;
     }
 
     a.logo {
         float: left;
         margin: .3em 1em;
-    } 
-    
-    .col{
-        flex: 50%;
-    }
-}
-
-@media (min-width: 980px) { 
-    .col: 20%;
+    }   
 }

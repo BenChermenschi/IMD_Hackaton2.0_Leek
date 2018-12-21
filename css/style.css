@@ -8,6 +8,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    margin-top: 200px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,10 +36,6 @@ body {
     display: block;
     content: " ";
     clear: both;
-}
-
-header {
-    height: 100vh;
 }
 
 section {
@@ -95,7 +95,6 @@ ul {
     position: relative;
 }
 
-
 a.logo {
     float: left;
     color: white;
@@ -112,6 +111,7 @@ a.logo {
 .nav {
     width: 100%;
     position: fixed;
+    top: 0px;
     z-index: 3;
     background-color: white;
     -webkit-transition: all .5s;
@@ -152,6 +152,28 @@ a.logo {
 
 .mobile_navigation a:hover {
     transform: translateY(-5px);
+}
+
+#artikels .img1 {
+    background-image: url(../image/phishing-nl.jpg);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 180px;
+    float: left;
+}
+
+#artikels article {
+    background-color: white;
+    box-shadow: 0 0 10px #00000070;
+    padding: 40px 20px;
+    margin-top: 25px;
+}
+
+.info {
+    float: left;
+    margin-left: 20px;
+    width: 80%;
 }
 
 .pricing-table {

@@ -163,6 +163,14 @@ a.logo {
     width: 220px;
     float: left;
 }
+.img2 {
+    background-image: url(../image/phishing-nl.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 240px;
+    margin-top: -200px;
+}
 
 #artikels article {
     background-color: white;
